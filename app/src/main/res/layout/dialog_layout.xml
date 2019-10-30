@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/header_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:hint="Subject Header" />
+
+    <EditText
+        android:id="@+id/content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_edit"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/lato"
+        android:hint="Content"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/answer_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_edit"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/lato"
+        android:hint="Answer" />
+
+    <Spinner
+        android:id="@+id/diffSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/answer_edit" />
+
+    <Button
+        android:id="@+id/picker_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/roundable2"
+        android:text="new colour picker"
+        android:layout_below="@id/diffSpinner"/>
+
+</RelativeLayout>

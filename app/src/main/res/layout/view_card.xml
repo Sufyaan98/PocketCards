@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:fontFamily="@font/lato_black"
+        android:gravity="center"
+        android:text="SORT YOUR FLASH CARDS"
+        android:textAlignment="center"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/searchFilter"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="Filter by Subject Header"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/sortOption"
+        android:layout_width="match_parent"
+        android:layout_height="42dp" />
+
+    <Button
+        android:id="@+id/sortButton"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundable"
+        android:fontFamily="@font/lato_black"
+        android:text="sort" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundable"
+        android:fontFamily="@font/lato_black"
+        android:text="Reset list" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_black"
+        android:gravity="center"
+        android:text="no flash card"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+    </ListView>
+</LinearLayout>

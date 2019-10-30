@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "138778216470",
+    "firebase_url": "https://pocketcards-3b3d2.firebaseio.com",
+    "project_id": "pocketcards-3b3d2",
+    "storage_bucket": "pocketcards-3b3d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138778216470:android:6fb758527beb9662",
+        "android_client_info": {
+          "package_name": "com.example.pocketcards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138778216470-pfofkqv4r79cr69939v38jc1khpikqd8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pocketcards",
+            "certificate_hash": "149fa05dac222fd0b2d8316fee4ec277a1f07c27"
+          }
+        },
+        {
+          "client_id": "138778216470-j7cd1p05df3avh0tqin6ochvu0l5euvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNfj3NMrNi1IgXrW7RuxAy4zpiingS6yc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138778216470-j7cd1p05df3avh0tqin6ochvu0l5euvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

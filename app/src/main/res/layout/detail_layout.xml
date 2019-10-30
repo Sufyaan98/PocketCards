@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/header_view"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back"
+                android:fontFamily="@font/lato_black"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentViewing"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/header_view"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/diff_view"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/contentViewing"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/answer_view"
+                android:layout_width="350dp"
+                android:layout_height="260dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back"/>
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="319dp"
+            android:background="@drawable/roundable"
+            android:fontFamily="@font/lato_black"
+            android:text="Edit card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundable"
+            android:fontFamily="@font/lato_black"
+            android:text="Delete card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editButton" />
+
+        <Button
+            android:id="@+id/flip_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/roundable"
+            android:fontFamily="@font/lato_black"
+            android:text="flip card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deleteButton" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

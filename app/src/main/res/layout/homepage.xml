@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.HomepageActivity">
+
+    <Button
+        android:id="@+id/createFlashCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundable"
+        android:fontFamily="@font/lato_black"
+        android:text="Create Flash Card"
+        app:layout_constraintBottom_toTopOf="@+id/viewFlashCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expand_txt" />
+
+    <Button
+        android:id="@+id/viewFlashCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundable"
+        android:fontFamily="@font/lato_black"
+        android:text="View Flash Card"
+        app:layout_constraintBottom_toTopOf="@+id/uploadB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createFlashCard" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Welcome"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/userInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="@font/lato_black"
+        android:gravity="center"
+        android:text="user info"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/uploadB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundable"
+        android:fontFamily="@font/lato_black"
+        android:text="Upload Flash Card sets"
+        app:layout_constraintBottom_toTopOf="@+id/downloadB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFlashCard" />
+
+    <Button
+        android:id="@+id/downloadB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundable"
+        android:fontFamily="@font/lato_black"
+        android:text="download flash card sets"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadB" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/expand_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/view_header"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/view_content"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_below="@+id/view_header"
+            android:background="@drawable/back"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/view_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/view_content"
+            android:background="@drawable/back"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:text="TextView"
+            android:textStyle="italic"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/notAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/expand_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="--Expand Flash Card--"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/createFlashCard"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="260dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Your last created Flash Card:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/expand_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInfo" />
+
+    <Button
+        android:id="@+id/quiz_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/roundable"
+        android:fontFamily="@font/lato_black"
+        android:text="take quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downloadB" />
+
+</android.support.constraint.ConstraintLayout>

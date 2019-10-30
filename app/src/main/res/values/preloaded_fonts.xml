@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alfa_slab_one</item>
+        <item>@font/carter_one</item>
+        <item>@font/lato</item>
+        <item>@font/old_standard_tt</item>
+        <item>@font/pt_serif</item>
+        <item>@font/ubuntu_light</item>
+        <item>@font/ubuntu_medium</item>
+        <item>@font/vollkorn</item>
+    </array>
+</resources>

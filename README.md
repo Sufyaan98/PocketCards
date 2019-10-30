@@ -1,3 +1,6 @@
-A simple Flash Card application for Students to create flash cards for their subjects to aid with study. 
-Application allows you to create new cards, update existing cards, delete cards & flip cards to see answers on the back.
-Created with AndroidStudio/Java
+This mobile application is a Flash Card app that allows you
+to create, view, delete and edit flash cards, as well as sort
+any existing flash cards you have.
+
+Firebase realtime database & authentication is used to store relevant 
+objects and to handle signing in for different users.
